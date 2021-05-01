@@ -4,7 +4,12 @@ import './css/framework.min.css';
 import './css/style.css';
 import './css/style.min.css';
 import logo from './img/comp-image.png';
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaBars, FaTimes, FaImage } from "react-icons/fa";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init();
+
 
 
 function App() {
@@ -13,11 +18,11 @@ function App() {
 
       {/*mobile nav*/}
       <a href="#" className="open_menu bg-light radius_full">
-        <i className="fas fa-bars lh-40"> </i>
+      <FaBars className="lh-40"/>
       </a>
       <div className="navigation_mobile bg-dark type1">
         <a href="#" className="close_menu color-white">
-          <i className="fas fa-times"> </i>
+          <FaTimes />
         </a>
         <div className="px-40 pt-60 pb-60 inner">
           <a href="#" className="mb-30 link img_link">
@@ -57,8 +62,12 @@ function App() {
             <div
               className="row justify-content-center align-items-center f-18 medium"
             >
-              <div className="col-lg-3">
-
+              <div class="col-lg-3"   
+                data-aos="fade-down"
+                data-aos-delay="750">
+                <a href="" class="link img_link"> 
+                  <img src={logo} alt="Logo" style={{width: "125px"}} />                  
+                </a>
               </div>
               <div
                 className="col-lg-6 text-center"
@@ -127,7 +136,7 @@ function App() {
           >
             <div>
               <label className="btn lg action-1">
-                <i className="fa fa-image"></i> Select Image<input
+                <FaImage/> Select Image<input
                   type="file"
                   style={{ display: 'none' }}
                   name="image"
@@ -231,15 +240,7 @@ function App() {
 
 
 
-      {/*bootstrap */}
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
-      {/*slick sliders */}
-      <script
-        type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-      ></script>
-      {/*aos animation */}
-      <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+     
     </div>
   );
 }
