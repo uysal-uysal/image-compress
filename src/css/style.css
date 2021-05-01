@@ -90,15 +90,6 @@ button {
   outline: none !important;
 }
 
-input,
-textarea {
-  border: 0;
-  outline: none;
-  background: transparent;
-  color: #1e0e62;
-  resize: none;
-}
-
 label {
   margin-bottom: 0;
   font-weight: 400;
@@ -143,21 +134,6 @@ h3 {
 b,
 strong {
   font-weight: 700;
-}
-
-.alert {
-  display: none;
-  position: fixed;
-  top: 50px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  max-width: 970px;
-  z-index: 2000;
-}
-.alert-dismissable .close,
-.alert-dismissible .close {
-  top: 0;
 }
 
 /* Change AOS plugin default settings */
@@ -213,15 +189,11 @@ strong {
     font-size: 18px;
     line-height: 28px;
   }
-
-  .alert {
-    top: 10px;
-    left: 20px;
-    right: 20px;
-    transform: none;
-    width: auto;
-    padding-left: 40px;
+  
+  .content_2 .text-adaptive {
+    margin-top: 15px;
   }
+
 }
 /* Smaller than 768px */
 @media (max-width: 767.98px) {
@@ -285,12 +257,31 @@ strong {
   .btn.xl[class*=" border-"] {
     line-height: 56px;
   }
-
-  .input.lg {
-    height: 50px;
-    font-size: 18px;
-    font-weight: 500;
+  .header_1 .text-adaptive {
+    margin-top: 20px;
   }
+  .header_1 .buttons {
+    margin-top: 40px;
+  }
+  .header_2 .text-adaptive {
+    margin-top: 20px;
+  }
+  .header_2 form {
+    margin-top: 40px;
+  }
+  .header_2 form .input {
+    text-align: center;
+    max-width: 100%;
+    width: 100%;
+  }
+  .header_2 form .btn {
+    margin-top: 15px;
+  }
+
+  .content_1 h2 {
+    margin-top: 10px;
+  }
+
 }
 /* Smaller than 576px */
 @media (max-width: 575.98px) {
@@ -319,53 +310,9 @@ strong {
   .btn.xl[class*=" border-"] {
     line-height: 46px;
   }
-}
-/* 3. Headers */
-@media (max-width: 767.98px) {
-  .header_1 .text-adaptive {
-    margin-top: 20px;
-  }
-  .header_1 .buttons {
-    margin-top: 40px;
-  }
-}
-
-@media (max-width: 767.98px) {
-  .header_2 .text-adaptive {
-    margin-top: 20px;
-  }
-  .header_2 form {
-    margin-top: 40px;
-  }
-  .header_2 form .input {
-    text-align: center;
-    max-width: 100%;
-    width: 100%;
-  }
-  .header_2 form .btn {
-    margin-top: 15px;
-  }
-}
-
-
-/* 5. Contents */
-@media (max-width: 767.98px) {
-  .content_1 h2 {
-    margin-top: 10px;
-  }
-}
-
-@media (max-width: 991.98px) {
-  .content_2 .text-adaptive {
-    margin-top: 15px;
-  }
-}
-
-
-
-/* 14. Footers */
-@media (max-width: 575.98px) {
+  
   .footer_1 .links a {
     margin: 0 10px;
   }
 }
+

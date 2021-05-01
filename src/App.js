@@ -65,9 +65,9 @@ function App() {
                 data-aos="fade-down"
                 data-aos-delay="750"
               >
-                <a href="#" className="link color-heading mx-15"> Image Compress? </a>
-                <a href="#" className="link color-heading mx-15"> 'png'? </a>
-                <a href="#" className="link color-heading mx-15"> 'jpeg'? </a>
+                <a href="#image-comp" className="link color-heading mx-15"> Image Compress? </a>
+                <a href="#png" className="link color-heading mx-15"> 'png'? </a>
+                <a href="#jpeg" className="link color-heading mx-15"> 'jpeg'? </a>
 
               </div>
               <div
@@ -75,7 +75,6 @@ function App() {
                 data-aos="fade-down"
                 data-aos-delay="1000"
               >
-                <a href="#" className="link mr-15 color-main"> Contacts </a>
                 <a
                   href="https://www.linkedin.com/in/uysal-uysal/"
                   className="mx-15 link color-main"
@@ -92,19 +91,35 @@ function App() {
             </div>
           </div>
         </nav>
+        
+        {/*why we need to comp image */}
         <div className="container">
           <h1 className="big text-center" data-aos="fade-down" data-aos-delay="0">
-            Startup Framework
-        </h1>
+            Görüntü Sıkıştırmaya Neden İhtiyacımız Var?
+          </h1>
           <div
-            className="mw-600 mx-auto mt-30 f-22 color-heading text-center text-adaptive"
+            className="mw-600 mx-auto mt-30 f-20 medium op-7 color-heading text-center text-adaptive"
             data-aos="fade-down"
             data-aos-delay="250"
           >
-            We made it so beautiful and simple. It combines landings, pages, blogs
-            and shop screens. It is definitely the tool you need in your
-            collection!
-        </div>
+            Görüntü Sıkıştırma bizlere, depolama ve zamandan tasarruf etme imkanı sağlar.
+         </div>
+         <div
+            className="mmw-600 mx-auto mt-30 f-20 medium op-7 color-heading text-center text-adaptive"
+            data-aos="fade-down"
+            data-aos-delay="250"
+          >
+            Sıkıştırılmış bir görüntü daha küçüktür. Yani hafızanız, 10 ham (sıkıştırılmamış) görüntü veya genel olarak 100 sıkıştırılmış görüntü tutabilir.
+
+          </div>
+          <div
+            className="mw-600 mx-auto mt-30 f-20 medium op-7 color-heading text-center text-adaptive"
+            data-aos="fade-down"
+            data-aos-delay="250"
+          >
+            Bununla da kalmayıp örneğin bir e-posta gönderiyorsanız, görüntü boyutunu azaltmak yani görüntüyü sıkıştırmak işinizde size hız sağlayacaktır.
+          </div>
+          
           <div
             className="mt-80 text-center buttons"
             data-aos="fade-down"
@@ -120,16 +135,17 @@ function App() {
               </label>
             </div>
           </div>
+          
         </div>
       </header>
 
-      {/*why we need to comp image */}
-      <section className="pt-105 pb-95 bg-light content_2">
+      {/*what is the image compression */}
+      <section id="image-comp" className="pt-105 pb-95 bg-light content_2">
         <div className="container px-xl-0 text-center">
           <div className="row justify-content-center">
             <div className="col-xl-8 col-lg-10">
               <h2 data-aos="fade-down" data-aos-delay="0">
-                Why we need to Compress Image?
+                Görüntü Sıkıştırma Nedir?
             </h2>
             </div>
             <div className="col-xl-7 col-lg-9 col-md-10">
@@ -138,21 +154,23 @@ function App() {
                 data-aos="fade-down"
                 data-aos-delay="250"
               >
-                We have created a new product that will help designers, developers
-                and companies create websites for their startups quickly and
-                easily.
+                Görüntü sıkıştırma, orijinal görüntüyü birkaç bit ile kodlayan bir veri sıkıştırma uygulamasıdır. Görüntü sıkıştırmanın amacı, görüntünün fazlalığını azaltmak ve verileri verimli bir biçimde depolamak veya iletmektir.
             </div>
             </div>
           </div>
+          <a href="https://en.wikipedia.org/wiki/Image_compression" 
+            className="mx-15 medium link color-main" 
+            style={{color: "#25DAC5"}}>- Image Compression
+          </a>
         </div>
       </section>
 
       {/*png? */}
-      <section className="pt-105 pb-95 bg-light content_2">
+      <section id="png" className="pt-105 pb-95 bg-light content_2">
         <div className="container px-xl-0 text-center">
           <div className="row justify-content-center">
             <div className="col-xl-8 col-lg-10">
-              <h2 data-aos="fade-down" data-aos-delay="0">What is the 'png'?</h2>
+              <h2 data-aos="fade-down" data-aos-delay="0">'png' Nedir?</h2>
             </div>
             <div className="col-xl-7 col-lg-9 col-md-10">
               <div
@@ -160,21 +178,23 @@ function App() {
                 data-aos="fade-down"
                 data-aos-delay="250"
               >
-                We have created a new product that will help designers, developers
-                and companies create websites for their startups quickly and
-                easily.
+                Png (Portable Network Graphics), görüntülerin kayıpsız sıkıştırılması için kullanılan bir saklama biçimidir. Bu kayıpsız veri sıkıştırma formatı, Grafik Değişim Formatının (GIF) yerini almak için oluşturulmuştur. Buna ek olarak, PNG dosyaları 24 bit RGB renk paletleri ve gri tonlamalı görüntüler içerebilir. Temel olarak, bu görüntü formatı internetteki görüntüleri aktarmak için tasarlanmıştır.
             </div>
             </div>
           </div>
+          <a href="https://en.wikipedia.org/wiki/Portable_Network_Graphics" 
+            className="mx-15 medium link color-main" 
+            style={{color: "#25DAC5"}}>- PNG
+          </a>
         </div>
       </section>
 
       {/*jpeg? */}
-      <section className="pt-105 pb-95 bg-light content_2">
+      <section id="jpeg" className="pt-105 pb-95 bg-light content_2">
         <div className="container px-xl-0 text-center">
           <div className="row justify-content-center">
             <div className="col-xl-8 col-lg-10">
-              <h2 data-aos="fade-down" data-aos-delay="0">What is the 'jpeg'?</h2>
+              <h2 data-aos="fade-down" data-aos-delay="0">'jpeg' Nedir?</h2>
             </div>
             <div className="col-xl-7 col-lg-9 col-md-10">
               <div
@@ -182,12 +202,14 @@ function App() {
                 data-aos="fade-down"
                 data-aos-delay="250"
               >
-                We have created a new product that will help designers, developers
-                and companies create websites for their startups quickly and
-                easily.
+                JPEG, (Joint Photographic Experts Group), kayıplı ve sıkıştırılmış görüntü verilerini içeren standart bir görüntü formatıdır. Dosya boyutundaki büyük azalmaya rağmen JPEG görüntüler makul görüntü kalitesini korur. Bu benzersiz sıkıştırma özelliği, JPEG dosyalarının İnternette, Bilgisayarlarda ve Mobil Cihazlarda yaygın olarak kullanılmasına izin verir. JPEG görüntülerin paylaşımı hızlı ve etkilidir. Ayrıca, minimum depolama alanında çok sayıda JPEG resim dosyası saklanabilir.
             </div>
             </div>
           </div>
+          <a href="https://en.wikipedia.org/wiki/JPEG" 
+            className="mx-15 medium link color-main" 
+            style={{color: "#25DAC5"}}>- JPEG
+          </a>
         </div>
       </section>
 
