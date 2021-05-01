@@ -1,0 +1,371 @@
+@import "framework.min.css";
+/* THIS IS A FREE VERSION OF STARTUP! */
+/* 
+	Table of contents:
+	1. Common styles
+	2. Common responsive styles
+	3. Headers
+	4. Navigations
+	5. Contents
+	6. Testimonials
+	7. Features
+	8. Forms
+	9. Call to Actions
+	10. Teams
+	11. Pricing Tables
+	12. Contacts
+	13. Showcases
+	14. Footers
+	15. Ecommerce
+	16. Applications
+*/
+/* 1. Common styles */
+body {
+  font-family: DM Sans, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #1e0e62;
+  -webkit-font-smoothing: antialiased;
+}
+body.dev {
+  background: #ccc;
+  min-height: 10000px;
+}
+
+nav,
+header,
+section,
+footer {
+  position: relative;
+}
+
+header,
+section,
+[data-bg-src],
+[data-bg-src-2x] {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+header,
+section {
+  overflow: hidden;
+}
+
+header nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+nav {
+  width: 100%;
+}
+nav.transparent {
+  background: transparent;
+}
+
+a,
+button {
+  cursor: pointer;
+  transition: all 0.25s;
+}
+a:hover,
+button:hover {
+  text-decoration: none;
+}
+a:active,
+a:focus,
+button:active,
+button:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+button {
+  border: none;
+  outline: none !important;
+}
+
+input,
+textarea {
+  border: 0;
+  outline: none;
+  background: transparent;
+  color: #1e0e62;
+  resize: none;
+}
+
+label {
+  margin-bottom: 0;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  margin: 0;
+  font-weight: 700;
+  font-family: DM Sans, Helvetica, Arial, sans-serif;
+}
+
+h1,
+h2 {
+  font-size: 58px;
+  line-height: 70px;
+}
+h1.big,
+h2.big {
+  font-size: 72px;
+  line-height: 86px;
+}
+h1.small,
+h2.small {
+  font-size: 42px;
+  line-height: 52px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 42px;
+  line-height: 52px;
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+.alert {
+  display: none;
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 970px;
+  z-index: 2000;
+}
+.alert-dismissable .close,
+.alert-dismissible .close {
+  top: 0;
+}
+
+/* Change AOS plugin default settings */
+[data-aos="fade-down"] {
+  transform: translate3d(0, -35px, 0);
+}
+
+[data-aos="fade-up"] {
+  transform: translate3d(0, 35px, 0);
+}
+
+/* Slick slider */
+.slick-loading .slick-list {
+  /* background: #fff url("../i/ajax-loader.gif") center center no-repeat; */
+}
+
+
+
+/* 2. Common responsive styles */
+
+/* Smaller than 992px */
+@media (max-width: 991.98px) {
+  h1,
+  h2 {
+    font-size: 42px;
+    line-height: 52px;
+  }
+  h1.big,
+  h2.big {
+    font-size: 52px;
+    line-height: 62px;
+  }
+  h1.small,
+  h2.small {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  h3 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  .text-adaptive.f-24 {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .text-adaptive.f-22 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .text-adaptive.f-20 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .alert {
+    top: 10px;
+    left: 20px;
+    right: 20px;
+    transform: none;
+    width: auto;
+    padding-left: 40px;
+  }
+}
+/* Smaller than 768px */
+@media (max-width: 767.98px) {
+  h1,
+  h2 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+  h1.big,
+  h2.big {
+    font-size: 42px;
+    line-height: 52px;
+  }
+  h1.small,
+  h2.small {
+    font-size: 26px;
+    line-height: 36px;
+  }
+
+  h3 {
+    font-size: 26px;
+    line-height: 36px;
+  }
+
+  .text-adaptive.f-24 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .text-adaptive.f-22 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .text-adaptive.f-20 {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .text-adaptive.f-18 {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .btn.lg {
+    height: 50px;
+    line-height: 50px;
+    padding: 0 30px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .btn.lg[class^="border-"],
+  .btn.lg[class*=" border-"] {
+    line-height: 46px;
+  }
+  .btn.xl {
+    height: 60px;
+    line-height: 60px;
+    padding: 0 35px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .btn.xl[class^="border-"],
+  .btn.xl[class*=" border-"] {
+    line-height: 56px;
+  }
+
+  .input.lg {
+    height: 50px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
+/* Smaller than 576px */
+@media (max-width: 575.98px) {
+  h1,
+  h2 {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  h1.big,
+  h2.big {
+    font-size: 32px;
+    line-height: 42px;
+  }
+  h1.small,
+  h2.small {
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  .btn.xl {
+    height: 50px;
+    line-height: 50px;
+    padding: 0 30px;
+  }
+  .btn.xl[class^="border-"],
+  .btn.xl[class*=" border-"] {
+    line-height: 46px;
+  }
+}
+/* 3. Headers */
+@media (max-width: 767.98px) {
+  .header_1 .text-adaptive {
+    margin-top: 20px;
+  }
+  .header_1 .buttons {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .header_2 .text-adaptive {
+    margin-top: 20px;
+  }
+  .header_2 form {
+    margin-top: 40px;
+  }
+  .header_2 form .input {
+    text-align: center;
+    max-width: 100%;
+    width: 100%;
+  }
+  .header_2 form .btn {
+    margin-top: 15px;
+  }
+}
+
+
+/* 5. Contents */
+@media (max-width: 767.98px) {
+  .content_1 h2 {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .content_2 .text-adaptive {
+    margin-top: 15px;
+  }
+}
+
+
+
+/* 14. Footers */
+@media (max-width: 575.98px) {
+  .footer_1 .links a {
+    margin: 0 10px;
+  }
+}
