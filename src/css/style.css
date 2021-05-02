@@ -1,25 +1,5 @@
 @import './framework.min.css';
-/* THIS IS A FREE VERSION OF STARTUP! */
-/* 
-	Table of contents:
-	1. Common styles
-	2. Common responsive styles
-	3. Headers
-	4. Navigations
-	5. Contents
-	6. Testimonials
-	7. Features
-	8. Forms
-	9. Call to Actions
-	10. Teams
-	11. Pricing Tables
-	12. Contacts
-	13. Showcases
-	14. Footers
-	15. Ecommerce
-	16. Applications
-*/
-/* 1. Common styles */
+
 body {
   font-family: DM Sans, Helvetica, Arial, sans-serif;
   font-weight: 400;
@@ -136,7 +116,7 @@ strong {
   font-weight: 700;
 }
 
-/* Change AOS plugin default settings */
+/* aos */
 [data-aos="fade-down"] {
   transform: translate3d(0, -35px, 0);
 }
@@ -145,16 +125,8 @@ strong {
   transform: translate3d(0, 35px, 0);
 }
 
-/* Slick slider */
-.slick-loading .slick-list {
-  /* background: #fff url("../i/ajax-loader.gif") center center no-repeat; */
-}
 
-
-
-/* 2. Common responsive styles */
-
-/* Smaller than 992px */
+/* smaller than 992px */
 @media (max-width: 991.98px) {
   h1,
   h2 {
@@ -195,7 +167,7 @@ strong {
   }
 
 }
-/* Smaller than 768px */
+/* smaller than 768px */
 @media (max-width: 767.98px) {
   h1,
   h2 {
@@ -283,7 +255,7 @@ strong {
   }
 
 }
-/* Smaller than 576px */
+/* smaller than 576px */
 @media (max-width: 575.98px) {
   h1,
   h2 {

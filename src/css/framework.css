@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Change bootstrap's .container default width */
+
 @media (min-width: 768px) {
   .container {
     max-width: 750px;
@@ -15,7 +15,7 @@
     max-width: 1170px;
   }
 }
-/* Font styles */
+/* font */
 .underline {
   text-decoration: underline;
 }
@@ -73,7 +73,7 @@
   letter-spacing: 2.5px;
 }
 
-/* Opacity */
+/* opacity */
 .op-0, .aos-init.aos-animate.op-0 {
   opacity: 0;
 }
@@ -169,9 +169,7 @@
   text-align: center;
   background: transparent;
   transition: all 0.25s;
-  /* sizes */
-  /* Colors */
-  /* Borders */
+  
 }
 .btn.active, .btn:active {
   box-shadow: none;
@@ -191,7 +189,6 @@
   line-height: 36px;
 }
 .btn.md {
-  /* regular size */
 }
 .btn.lg {
   height: 60px;
@@ -578,149 +575,12 @@ textarea.input {
   position: absolute;
 }
 
-/* Slider stylers */
-.slider.arrows0 .slick-prev {
-  left: 0px;
-}
-.slider.arrows0 .slick-next {
-  right: 0px;
-}
-.slider.arrows10 .slick-prev {
-  left: 10px;
-}
-.slider.arrows10 .slick-next {
-  right: 10px;
-}
-.slider.arrows20 .slick-prev {
-  left: 20px;
-}
-.slider.arrows20 .slick-next {
-  right: 20px;
-}
-.slider.arrows30 .slick-prev {
-  left: 30px;
-}
-.slider.arrows30 .slick-next {
-  right: 30px;
-}
-.slider.arrows40 .slick-prev {
-  left: 40px;
-}
-.slider.arrows40 .slick-next {
-  right: 40px;
-}
-.slider.arrows50 .slick-prev {
-  left: 50px;
-}
-.slider.arrows50 .slick-next {
-  right: 50px;
-}
-.slider.arrows60 .slick-prev {
-  left: 60px;
-}
-.slider.arrows60 .slick-next {
-  right: 60px;
-}
-.slider.arrows70 .slick-prev {
-  left: 70px;
-}
-.slider.arrows70 .slick-next {
-  right: 70px;
-}
-.slider.arrows80 .slick-prev {
-  left: 80px;
-}
-.slider.arrows80 .slick-next {
-  right: 80px;
-}
-.slider.arrows90 .slick-prev {
-  left: 90px;
-}
-.slider.arrows90 .slick-next {
-  right: 90px;
-}
-.slider.arrows100 .slick-prev {
-  left: 100px;
-}
-.slider.arrows100 .slick-next {
-  right: 100px;
-}
-.slider.dots_color_main .slick-dots li button {
-  border-color: #1E0E62;
-}
-.slider.dots_color_main .slick-dots li.slick-active button {
-  background: #1E0E62;
-}
-.slider.dots-100 .slick-dots {
-  bottom: -100px;
-}
-.slider.dots-90 .slick-dots {
-  bottom: -90px;
-}
-.slider.dots-80 .slick-dots {
-  bottom: -80px;
-}
-.slider.dots-70 .slick-dots {
-  bottom: -70px;
-}
-.slider.dots-60 .slick-dots {
-  bottom: -60px;
-}
-.slider.dots-50 .slick-dots {
-  bottom: -50px;
-}
-.slider.dots-40 .slick-dots {
-  bottom: -40px;
-}
-.slider.dots-30 .slick-dots {
-  bottom: -30px;
-}
-.slider.dots-20 .slick-dots {
-  bottom: -20px;
-}
-.slider.dots-10 .slick-dots {
-  bottom: -10px;
-}
-.slider.dots0 .slick-dots {
-  bottom: 0px;
-}
-.slider.dots10 .slick-dots {
-  bottom: 10px;
-}
-.slider.dots20 .slick-dots {
-  bottom: 20px;
-}
-.slider.dots30 .slick-dots {
-  bottom: 30px;
-}
-.slider.dots40 .slick-dots {
-  bottom: 40px;
-}
-.slider.dots50 .slick-dots {
-  bottom: 50px;
-}
-.slider.dots60 .slick-dots {
-  bottom: 60px;
-}
-.slider.dots70 .slick-dots {
-  bottom: 70px;
-}
-.slider.dots80 .slick-dots {
-  bottom: 80px;
-}
-.slider.dots90 .slick-dots {
-  bottom: 90px;
-}
-.slider.dots100 .slick-dots {
-  bottom: 100px;
-}
-
 /* Change some Bootstrap's styles */
 .table-striped tbody tr:nth-of-type(odd) {
   background-color: rgba(235, 234, 237, 0.5);
 }
 
-/* Classes for all elements */
+
 /* Margins and paddings */
 .mt-0 {
   margin-top: 0px;
