@@ -7,6 +7,7 @@ import logo from './img/comp-image.png';
 import { FaGithub, FaLinkedinIn, FaBars, FaTimes, FaImage } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import "./script"
 
 AOS.init();
 
@@ -26,15 +27,22 @@ function App() {
         </a>
         <div className="px-40 pt-60 pb-60 inner">
           <a href="#" className="mb-30 link img_link">
-            <img src={require("./img/comp-image.png")} alt="logo" />
+            <img src={logo} alt="Logo" style={{width: "125px"}} />
           </a>
           <div>
-            <a href="#" className="f-heading f-22 link color-white mb-20"> Home </a>
+            <a href="#" className="openmenu-item f-heading f-22 link color-white mb-20"> Home </a>
           </div>
           <div>
-            <a href="#" className="link color-white op-3 mb-15"> About Us </a>
+            <a href="#image-comp" className="openmenu-item f-heading f-18 link color-white mb-20"> Image Compress? </a>
           </div>
-          <div className="socials mt-40">
+          <div>
+            <a href="#png" className="openmenu-item f-heading f-18 link color-white mb-20"> 'png'? </a>
+          </div>
+          <div>
+            <a href="#jpeg" className="openmenu-item f-heading f-18 link color-white mb-20"> 'jpeg'? </a>
+          </div>
+
+          <div className="openmenu-item socials mt-40">
             <a
               href="https://www.linkedin.com/in/uysal-uysal/"
               target="_blank"
