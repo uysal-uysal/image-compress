@@ -1,5 +1,7 @@
 ### Features
 
+- deployed to heroku 
+
 - React used as ui framework
 - fontawasome, react icons
 - aos animations
