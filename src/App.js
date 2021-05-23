@@ -7,7 +7,6 @@ import logo from './img/comp-image.png';
 import { FaGithub, FaLinkedinIn, FaBars, FaTimes, FaImage } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import "./script";
 
 AOS.init();
 
@@ -19,15 +18,15 @@ function App() {
 
       {/*mobile nav*/}
       <a href="#" className="open_menu bg-light radius_full">
-        <FaBars className="lh-40"/>
+      <FaBars className="lh-40"/>
       </a>
-      <div className="navigation_mobile bg-dark type1 opened">
+      <div className="navigation_mobile bg-dark type1">
         <a href="#" className="close_menu color-white">
           <FaTimes />
         </a>
         <div className="px-40 pt-60 pb-60 inner">
           <a href="#" className="mb-30 link img_link">
-             <img src={logo} alt="Logo" style={{width: "125px"}} />
+            <img src={require("./img/comp-image.png")} alt="logo" />
           </a>
           <div>
             <a href="#" className="f-heading f-22 link color-white mb-20"> Home </a>
