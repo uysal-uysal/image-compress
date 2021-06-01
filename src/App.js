@@ -29,8 +29,8 @@ export default class App extends React.Component {
     this.compressImage = this.compressImage.bind(this);
     this.handleChange = this.handleChange.bind(this);
     this.state = {
-      maxSizeMB: 1,
-      maxWidthOrHeight: 512,
+      maxSizeMB: 0.3,
+      maxWidthOrHeight: 1024,
       webWorker: {
         progress: null,
         inputSize: null,
@@ -313,17 +313,20 @@ export default class App extends React.Component {
 
                 {/*preview original and compressed images*/}
                 {webWorker.inputUrl && (
-                  <table className="mw-600 mx-auto mt-30">
+                  <table className="row justify-content-center mw-600 mx-auto mt-30">
                     <thead>
                       <tr className="mw-600 mt-30 mb-30 f-16 medium op-7 color-heading text-center text-adaptive">
                         <td>input preview</td>
                         <td>output preview</td>
                       </tr>
                     </thead>
+                    <br />
                     <tbody>
                     <tr >
-                      <td><img src={webWorker.inputUrl} style={{ width: "500px" }} alt="input" /></td>
-                      <td><img src={webWorker.outputUrl} style={{ width: "500px" }} alt="output" /></td>
+                    <ReactCompareSlider
+                        itemOne={<ReactCompareSliderImage src={webWorker.inputUrl} style={{ height: "1024px" }} alt="Image one" />}
+                        itemTwo={<ReactCompareSliderImage src={webWorker.outputUrl} style={{ height: "1024px" }} alt="Image two" />}
+                      />
                     </tr>
                     </tbody>
                   </table>
