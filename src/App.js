@@ -104,7 +104,6 @@ export default class App extends React.Component {
     return (
       <div className="App">
         <div>
-          
           {/*mobile nav*/}
           <a href="#" className="open_menu bg-light radius_full">
             <FaBars className="lh-40" />
@@ -151,6 +150,15 @@ export default class App extends React.Component {
                 >
                   {" "}
                   'jpeg'?{" "}
+                </a>
+              </div>
+              <div>
+                <a
+                  href="#links"
+                  className="openmenu-item f-heading f-18 link color-white mb-20"
+                >
+                  {" "}
+                  İlgili Linkler{" "}
                 </a>
               </div>
 
@@ -205,6 +213,13 @@ export default class App extends React.Component {
                     <a href="#jpeg" className="link color-heading mx-15">
                       {" "}
                       'jpeg'?{" "}
+                    </a>
+                    <a
+                      href="#links"
+                      className="link color-heading mx-15"
+                    >
+                      {" "}
+                      İlgili Linkler{" "}
                     </a>
                   </div>
                   <div
@@ -306,24 +321,10 @@ export default class App extends React.Component {
                       </tr>
                     </thead>
                     <tbody>
-                      <tr>
-                        <td>
-                          <ReactCompareSlider
-                            itemOne={
-                              <ReactCompareSliderImage
-                                src={webWorker.inputUrl}
-                                alt="Image one"
-                              />
-                            }
-                            itemTwo={
-                              <ReactCompareSliderImage
-                                src={webWorker.outputUrl}
-                                alt="Image two"
-                              />
-                            }
-                          />
-                        </td>
-                      </tr>
+                    <tr >
+                      <td><img src={webWorker.inputUrl} style={{ width: "500px" }} alt="input" /></td>
+                      <td><img src={webWorker.outputUrl} style={{ width: "500px" }} alt="output" /></td>
+                    </tr>
                     </tbody>
                   </table>
                 )}
@@ -432,6 +433,54 @@ export default class App extends React.Component {
               >
                 - JPEG
               </a>
+            </div>
+          </section>
+
+          <section id="links" className="pt-105 pb-95 bg-light content_2">
+            <div className="container px-xl-0 text-center">
+              <div className="row justify-content-center">
+                <div className="col-xl-8 col-lg-10">
+                  <h2 data-aos="fade-down" data-aos-delay="0">
+                    Linkler
+                  </h2>
+                </div>
+                <div className="col-xl-7 col-lg-9 col-md-10">
+                  <div
+                    className="mt-35 f-18 medium color-heading op-7 text-adaptive"
+                    data-aos="fade-down"
+                    data-aos-delay="250"
+                  >
+                    <a
+                      href="https://youtu.be/a36_L4QjGQE"
+                      className="mx-15 medium link color-main"
+                      style={{ color: "#25DAC5" }}
+                    >
+                      - Youtube
+                    </a>
+                    <a
+                      href="https://github.com/uysal-uysal/image-compress"
+                      className="mx-15 medium link color-main"
+                      style={{ color: "#25DAC5" }}
+                    >
+                      - Source Code
+                    </a>
+                    <a
+                      href="https://github.com/Donaldcwl/browser-image-compression"
+                      className="mx-15 medium link color-main"
+                      style={{ color: "#25DAC5" }}
+                    >
+                      - Compression Github
+                    </a>
+                    <a
+                      href="https://drive.google.com/file/d/1xhOXyXyzCOd2PK19KI_M5lEsYz0fU4GI/view?usp=sharing"
+                      className="mx-15 medium link color-main"
+                      style={{ color: "#25DAC5" }}
+                    >
+                      - Proje Dokümanı
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </section>
         </div>
