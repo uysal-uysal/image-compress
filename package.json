@@ -13,7 +13,6 @@
     "aos": "^2.3.4",
     "browser-image-compression": "^1.0.14",
     "font-awesome": "^4.7.0",
-    "j-i-c": "^2.0.2",
     "jquery": "^3.6.0",
     "react": "^17.0.2",
     "react-compare-image": "^3.1.0",
